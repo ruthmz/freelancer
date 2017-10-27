@@ -1,3 +1,39 @@
 /*
  * Estilos de tu proyecto
+ font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
  */
+ .container{
+     height: 107px;
+     width: 100%;
+     background:#2c3e50;
+     position: relative;
+     font-family: 'Lato', sans-serif;     
+     color: #fff;
+ }
+.container li {
+    list-style: none;
+    display: inline-block;
+    /* color: #fff; */
+}
+.menu ul{
+    display: inline-block;
+}
+.menu{
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    font-weight: bold;
+    size: 30;
+}
+.start{
+    display: inline-block;
+    font-size: 800;
+    font-weight: bold;
+    
+}
+.start a{
+    text-decoration: none; 
+    /* color: #fff; */
+    
+}
