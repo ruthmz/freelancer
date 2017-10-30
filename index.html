@@ -3,15 +3,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>freelancers</title>
-    <!--<link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">    <title>freelancers</title>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://www.bootstrapcdn.com/fontawesome/">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <nav id="">
+    <nav class="navbar">
       <div class="container">
         <div class="start">
           <a href="#"> START BOOTSTRAP</a>
@@ -40,65 +41,91 @@
   </section>
   <main>
     <section class="portfolio">
-     <h2>PORTAFOLIO</h2>
+     <h2>PORTFOLIO</h2>
      <!-- star<hr> -->
-     <figure>
-       <img src="assets/images/portfolio/cabin.png" alt="cabin">
-       <img src="assets/images/portfolio/cake.png" alt="cake">
-       <img src="assets/images/portfolio/circus.png" alt="circus">
-       <img src="assets/images/portfolio/game.png" alt="game">
-       <img src="assets/images/portfolio/safe.png" alt="safe">
-       <img src="assets/images/portfolio/submarine.png" alt="submarine">
-     </figure>
+     <div class="icon">
+      <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+     </div>
+     <div class="set">
+       <figure><a href=""><img src="assets/images/portfolio/cabin.png" alt="cabin"></a>         
+       </figure>
+       <figure><a href=""><img src="assets/images/portfolio/cake.png" alt="cake"></a>
+       </figure>
+       <figure><a href=""><img src="assets/images/portfolio/circus.png" alt="circus"></a>
+       </figure>
+       <figure><a href=""><img src="assets/images/portfolio/game.png" alt="game"></a>
+       </figure>
+       <figure><a href=""><img src="assets/images/portfolio/safe.png" alt="safe"></a>
+       </figure>
+       <figure>
+       <a href=""><img src="assets/images/portfolio/submarine.png" alt="submarine"></a>
+       </figure>
+     </div>
    </section>
    <section class="about">
     <h2>ABOUT</h2>
     <!-- <hr> -->
-    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+    <div class="icon">
+      <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+    </div>
+    <div class="text">
+      <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+      <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+   </div>
 
-    <button type="button" name="button"><i class="fa fa-download" aria-hidden="true"></i>Download Theme</button>
+    <button class="button"><i class="fa fa-download" aria-hidden="true"></i>Download Theme</button>
 
    </section>
-   <section class="contact-me">
+   <section class="contact">
      <h2>CONTACT ME</h2>
-     <hr>
-     <form class="dates">
-       <input type="text">
-       <input type="text">
-       <input type="text">
-       <textarea name="name" rows="8" cols="80"></textarea>
-       <input type="submit" value="Send">
-
-    </form>
+     <div class="icon">
+      <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+     </div>
+     <div= group2>
+      <form class="data" method="post">
+        <div class="info">              
+          <input type="text" placeholder="Name">
+        </div>      
+        <div class="info">         
+          <input id="name" type="text" placeholder="Email Address">
+        </div>
+        <div class="info">          
+          <input type="text" placeholder="Phone Number">
+        </div>
+        <div class="info">
+          <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea>   
+        </div>
+        <div= "send">   
+          <input type="submit" name="" value="Send">
+        </div>
+      </form>      
+     </div>
 
    </section>
   </main>
   <footer>
     <div class="information-footer">
       <div class="row">
-        <div class="colum-1">
+        <div class="column-1">
          <h3>LOCATION</h3>
-         <p>3481 Melrose Place <br>
+         <p class="size">3481 Melrose Place <br>
            Beverly Hills, CA 90210</p>
-
         </div>
-
-        <div class="colum-2">
-          <h3>AROUND THE WEB</h3>
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-          <i class="fa fa-google-plus" aria-hidden="true"></i>
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-          <i class="fa fa-dribbble" aria-hidden="true"></i>
+        <div class="column-2">
+            <h3> AROUND THE WEB</h3>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
         </div>
-        <div class="colum-3">
-         <h3>ABOUT FREELANCER</h3>
-         <p>Freelance is a free to use, open source Bootstrap theme created by <a href="https://startbootstrap.com/">Start Bootstrap.</a></p>
+        <div class="column-3">
+          <h3>ABOUT FREELANCER</h3>
+          <p class="size">Freelance is a free to use, open source Bootstrap theme created by <a href="https://startbootstrap.com/">Start Bootstrap.</a></p>
         </div>
+      </div>
     </div>
-    </div>
-    <div class="coorporation">
+    <div class="corporation">
       <p>Copyright © Your Website 2017</p>
     </div>
   </footer>
