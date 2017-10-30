@@ -19,6 +19,9 @@ font-family: 'Montserrat', sans-serif;
     padding: 30px 127px 10px 100px;
     position: fixed;
 }
+.navbar{
+    padding-bottom: 90px;
+}
 .container li {
    list-style: none;
    display: inline-block;
@@ -40,7 +43,6 @@ font-family: 'Montserrat', sans-serif;
    display: inline-block;
    font-size: 800;
    font-weight: bold;
-
 }
 .start a{
    text-decoration: none;
@@ -62,20 +64,25 @@ nav{
 .first{
    background: #18bc9c;
    width: 100%;
-   padding: 107px;
+   padding: 108px;
+}
+.man{
+    margin-bottom: 28px;
 }
 .first .group{
-   outline: 2px solid yellow;
+   /* outline: 2px solid yellow; */
    text-align: center;
    color: #fff;
 }
 .group h1{
    font-size: 76px;
    font-family: 'Montserrat', sans-serif;
+   margin-bottom: 17px;
 }
 .group p{
    font-size: 28px;
    font-family: 'Lato', sans-serif;
+   margin-top: 17px;
 }
 .navbar{
     align-items: center;
@@ -84,7 +91,7 @@ nav{
 
 .icon::before{
    content:'';
-   width: 105px;
+   width: 100px;
    height:5px;
    background-color:#fff;
    display: inline-block;
@@ -93,7 +100,7 @@ nav{
 }
 .icon::after{
    content:'';
-   width: 105px;
+   width: 100px;
    height:5px;
    background-color:#fff;
    display: inline-block;
@@ -142,6 +149,9 @@ h2{
 .portfolio{
     padding: 100px 0;
 }
+.set figure{
+    margin: 12px;
+}
 main{
     text-align: center;
 }
@@ -154,7 +164,8 @@ main{
     width: 100%;   
 }
 .about h2{
-    color: #fff;        
+    color: #fff;
+    margin-bottom: 15px;    
 }
 .text {
     font-family: 'Lato', sans-serif;
@@ -163,20 +174,20 @@ main{
     column-gap: 30px;
     width: 720px;
     text-align: center;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
     line-height: 30px;
     margin-left: 24%;
+    margin-bottom: 30px;
 }
 .text p{
     text-align: left;
-    /* display: inline; */   
 }
 .button {
     background-color: #18bc9c; 
     font-family: 'Lato', sans-serif;
     border: none;
     color: white;
-    outline: 3px red;
+    /* outline: 3px red; */
     padding: 11px 17px;
     text-align: center;
     text-decoration: none;
@@ -191,16 +202,27 @@ main{
     background-color: white;
     color: #18bc9c;
   }
+.button:active{
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
 button i{
     margin-right: 4px;
 }
-.contact .icon{
+#contact{
+    padding-top:90px;
+    padding-bottom:90px;
+}
+#contact h2{
+    margin-bottom: 10px;
+}
+#contact .icon{
     color: #2c3e50;
 }
-.contact .icon::after{
+#contact .icon::after{
     background-color:#2c3e50;
 }
-.contact .icon::before{
+#contact .icon::before{
     background-color:#2c3e50;
 }
 .data{
@@ -216,12 +238,33 @@ button i{
     padding-bottom: 38px;
     margin-bottom: 40px;
 }
+
 input[type=submit] {
     background-color: #18bc9c;
     border: none;    
     color: white;
     padding: 10px 12px;
+    font-family: 'Lato', sans-serif;
+    outline: 3px red;
+    padding: 11px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    /* cursor: pointer; */
+    border-radius: 4px;
+    font-weight: bold;   
+    /* border: 2px solid white; */
 }
+input[type=submit]:hover{
+    background-color: #128F76;
+    box-shadow:0 0 0 0.2rem rgba(0,123,255,.25)
+}
+input[type=submit]:active{
+    background-color:#1e7e34;
+    box-shadow:0 0 0 0.2rem rgba(40,167,69,.5);
+  }
 .data input[type=submit]{
     position: relative;
     right: 25%;
@@ -235,7 +278,7 @@ footer{
     color:#fff;
     font-family: 'Lato', sans-serif;
     size: 50px;
-    /* padding-bottom: 50px; */
+    padding-top: 30px;
 }
 footer h3{
     font-family: 'Montserrat', sans-serif;
@@ -246,8 +289,7 @@ footer h3{
     display: inline-block;
     margin: 0px 10px;
     width: 25%;
-    /* vertical-align: middle;     */
-        
+    vertical-align:text-top;        
 }
 .row{
     padding-top: 20px;
@@ -263,7 +305,7 @@ footer h3{
     padding-bottom: 22px;
     font-family: 'Lato', sans-serif;    
 }
-.column-2 i{/*estilos para los iconos*/
+.two i{/*estilos para los iconos*/
     display: inline-block;
     border:2px solid white;
     border-radius: 50px;
@@ -274,10 +316,18 @@ footer h3{
     font-size: 25px;
     margin-top: 25px;
     margin-left: 5px;
-  }
- .column-2{
-     padding-top: 39px;
- }
-.column{
-    vertical-align: middle;    
 }
+.two a{
+    color: #fff;
+}
+.three a{
+    color: #18bc9c;
+    text-decoration: none;
+}
+.two .fa:hover{
+    background-color: #fff;
+    color: #18bc9c;
+}
+
+
+
